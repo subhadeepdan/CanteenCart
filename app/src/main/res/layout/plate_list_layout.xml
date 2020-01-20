@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/listimage"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/burger" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.24"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/listname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Item Name"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="3.60" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text="Total Price  : Rs"
+                android:layout_height="match_parent"
+                android:id="@+id/iprice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textStyle="normal|italic"
+                android:textAlignment="viewEnd"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="142dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/selectedprice"
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:text="rajat"
+                android:gravity="center"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:id="@+id/delete"
+            android:layout_weight="1"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_seconday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="FOOD ITEM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:layout_weight="0.05"
+        android:textAlignment="gravity"
+        android:textStyle="italic|bold"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/selectedimage"
+        app:srcCompat="@drawable/khamand"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedfood"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="gravity"
+        android:text="itemname"
+        android:layout_weight="0.04"
+        android:textStyle="normal|bold"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02">
+
+        <TextView
+            android:text="Price  : Rs"
+            android:layout_height="match_parent"
+            android:id="@+id/iprice"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="normal|italic"
+            android:textAlignment="viewEnd"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="50dp"
+            android:layout_width="136dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selectedprice"
+            android:textSize="16sp"
+            android:textAlignment="viewStart"
+            android:text="itemprice"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:weightSum="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/quantity"
+            android:layout_weight="0.72"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textAlignment="viewEnd" />
+
+        <TextView
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:id="@+id/selectednoofitems"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="viewEnd"
+            android:text="quan"
+            android:gravity="center"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:id="@+id/increase"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="+"
+                android:onClick="increaseQuantity"/>
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:id="@+id/decrease"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:text="-"
+                android:onClick="decreaseQuantity"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="ADD TO CART"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addtocart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:onClick="addToCart"
+        android:layout_weight="0.02" />
+
+</LinearLayout>

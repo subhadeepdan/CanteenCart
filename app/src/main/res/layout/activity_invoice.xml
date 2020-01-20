@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="4dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="BIT Canteen"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:text="BIT Deoghar, Jasidih - 814112\nPhone : 9876543210\n\nEmail : bitdcanteen@gmail.com\n"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <TextView
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view"
+                android:text="TAX"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:text="INVOICE"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <View
+                android:id="@+id/view2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:text="Invoice No : ABCD12344 "
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/invoiceUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:text="Bill To : Dan"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/invoiceDatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invoiceUsername"
+                android:text="Invoice Date and Time : 09-12-2019"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_below="@+id/invoiceDatetime"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view3">
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="144dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="Product"
+                        android:textColor="@android:color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textSize="10dp"
+                        android:layout_width="44dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="Quantity"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="Price"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView android:text="Amount"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+                <TableRow>
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c0c0c0"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/invoiceItemname"
+                        android:text="Burger"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:id="@+id/invoiceQuantity"
+                        android:text="1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:id="@+id/invoicePrice"
+                        android:text="50"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView android:text="50"
+                        android:id="@+id/invoiceAmount"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dip"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+                <TableRow>
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c0c0c0"/>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/amountTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/table"
+                android:text="Sub Total : Rs. 50"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1044158060721",
+    "firebase_url": "https://bitdcanteen.firebaseio.com",
+    "project_id": "bitdcanteen",
+    "storage_bucket": "bitdcanteen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044158060721:android:41939895a0ba70b473ea90",
+        "android_client_info": {
+          "package_name": "com.subhadeep.bitd_canteen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044158060721-d3chjk3hkrhk3brm06cgpd7k4kjpsjf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkSqU3-oWGxU4p1X586XvhFHhBmI6wNqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044158060721-d3chjk3hkrhk3brm06cgpd7k4kjpsjf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
