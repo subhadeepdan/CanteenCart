@@ -1,18 +1,17 @@
 package com.subhadeep.bitd_canteen;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.TextView;
-import android.widget.Toast;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.subhadeep.bitd_canteen.fooditems.fooddata.FoodDetails;
 import com.subhadeep.bitd_canteen.fooditems.fooddata.StorageClass;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class InvoiceActivity extends AppCompatActivity {
     TextView invoiceItemname, invoiceQuantity, invoicePrice, invoiceAmount, invoiceTotalamount, invoiceUsername, invoiceDatetime;
@@ -34,10 +33,6 @@ public class InvoiceActivity extends AppCompatActivity {
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
 
-        if(user!=null){
-            String userEmail = user.getEmail();
-            username   = userEmail.substring(0, userEmail.lastIndexOf("@"));
-        }
 
 
         //get current date and time
