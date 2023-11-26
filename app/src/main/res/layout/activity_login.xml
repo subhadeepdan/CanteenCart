@@ -21,7 +21,9 @@
             android:layout_height="@dimen/logo_w_h"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/bitlogo" />
+            android:src="@drawable/ImageUtils.setDrawableFromJpg(this, imageView, R.drawable.ce850240-fad7-427b-8e7c-a319d133c2d3.jpg);
+            " />
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
